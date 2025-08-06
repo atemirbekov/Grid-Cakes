@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 100vw;
+  overflow-x: auto;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  padding: 25px;
+}
+
+.info {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result {
+  margin-bottom: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: #2e363e;
+}
+
+.orders {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 143%;
+  color: #2e363e;
+}
+
+.cakes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  place-items: center;
+  gap: 9px;
+}
+
+.cake {
+  width: 100%;
+  height: auto;
+}
