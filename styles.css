@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
+  color: #2e363e;
 }
 
 html,
@@ -15,9 +17,77 @@ body {
   display: grid;
   place-items: center;
   padding: 25px;
+  background-color: beige;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  place-items: center;
+  gap: 20px;
+}
+.card {
+  display: grid;
+  width: 380px;
+  height: 582px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 8px 16px 0px #c2c6d00f;
+}
+.subcard {
+  display: grid;
+  width: 380px;
+  height: 337px;
+  gap: 24px;
+  padding: 50px 44px;
+  border: 1px solid #f2f6fa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.text {
+  display: grid;
+  gap: 12px;
+  width: 247px;
+  height: 95px;
+}
+.name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 143%;
+}
+.ingredients {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.purchase {
+  width: 163px;
+  height: 118px;
+  display: grid;
+  gap: 14px;
+}
+.price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #434b53;
+}
+.order {
+  padding: 20px 40px;
+  border-radius: 8px;
+  background-color: #fed84c;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 152%;
+}
+.order:hover {
+  cursor: pointer;
 }
 
 .info {
+  margin-top: 240px;
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
@@ -27,20 +97,16 @@ body {
 
 .result {
   margin-bottom: 14px;
-  font-family: Montserrat;
   font-weight: 500;
   font-size: 48px;
   line-height: 60px;
   letter-spacing: -1px;
-  color: #2e363e;
 }
 
 .orders {
-  font-family: Montserrat;
   font-weight: 400;
   font-size: 24px;
   line-height: 143%;
-  color: #2e363e;
 }
 
 .cakes {
